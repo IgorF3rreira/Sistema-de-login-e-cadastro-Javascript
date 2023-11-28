@@ -7,14 +7,21 @@ body{
 
     background-color: #7e8fb3;
 
-
 }
 
-    /* border: 1px solid black; */
-    /* width: 80%;
-    height: 98vh;
+#aguarde{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    display: none;
+}
+#body{
     display: block;
-    margin: 0px auto; */
+}
 
 
 
@@ -41,7 +48,7 @@ div{
     text-align: center;
     margin-top: 15px;
 }
-.btnMuda{
+#btnMuda{
     margin-top: 10px;
     background-image: radial-gradient(circle at 37.6% 71.48%, #39d9ff 0, #3680bc 50%, #1d324a 100%);
     width: 120px;
@@ -49,8 +56,8 @@ div{
     color: beige;
     font-weight: bolder;
     cursor: pointer; 
-}.btnMuda:hover{
-    background-image: radial-gradient(circle at 37.6% 71.48%, #39d9ff 0, #3680bc 50%, #1d324a 100%);
+}#btnMuda:hover{
+    background-image: radial-gradient(circle at 37.6% 71.48%, #dfc42a 0, #e1b627 10%, #dfa727 20%, #d99627 30%, #cf8428 40%, #c17128 50%, #b25f28 60%, #a35028 70%, #974328 80%, #8b3828 90%, #812f29 100%);
     width: 120px;
     height: 40px;
     color: black;
@@ -66,6 +73,7 @@ div{
     color: beige;
     font-weight: bolder;
     cursor: pointer;
+    margin-bottom: 10px;
     
 }#btnMuda2:hover{
     background-image: radial-gradient(circle at 37.6% 71.48%, #39d9ff 0, #3680bc 50%, #1d324a 100%);
@@ -77,7 +85,7 @@ div{
 }
 
 
-#h5, #h5-2{
+#h5, #h5-5{
     margin-top: 50px;
     text-align: center;
     font-weight: bolder;
@@ -86,8 +94,18 @@ div{
 
    
 }
+#h5-2, #h5-3, #h5-4{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 5px 10px #19000e;
+    color: #cf8428;
+    display: none;
 
-input{
+   
+}
+
+.login{
     
     display: block;
     margin: 0px auto;
@@ -98,12 +116,21 @@ input{
    text-align: center;
 
 }
+.cad{
+    display: none;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+   text-align: center;
+}
 
 #h3-2{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
-    color:#b25f28;
+    color: #d99627 ;
     display: none;
 }
 
@@ -122,6 +149,7 @@ input{
     color: beige;
     font-weight: bolder;
     cursor: pointer; 
+    margin-bottom: 10px;
 }#btnMuda3:hover{
     background-image: radial-gradient(circle at 37.6% 71.48%, #dfc42a 0, #e1b627 10%, #dfa727 20%, #d99627 30%, #cf8428 40%, #c17128 50%, #b25f28 60%, #a35028 70%, #974328 80%, #8b3828 90%, #812f29 100%);
     width: 120px;
@@ -146,7 +174,7 @@ input{
     font-weight: bolder;
     cursor: pointer; 
 }#btnMuda4:hover{
-    background-image: radial-gradient(circle at 37.6% 71.48%, #dfc42a 0, #e1b627 10%, #dfa727 20%, #d99627 30%, #cf8428 40%, #c17128 50%, #b25f28 60%, #a35028 70%, #974328 80%, #8b3828 90%, #812f29 100%);
+    background-image: radial-gradient(circle at 37.6% 71.48%, #39d9ff 0, #3680bc 50%, #1d324a 100%);
     width: 120px;
     height: 40px;
     color: black;
