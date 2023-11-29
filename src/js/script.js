@@ -1,4 +1,5 @@
-alert("Um sistema de login simples \nEle não faz varios cadastros \nLembre-se é apenas uma simulação ")
+alert("Um sistema de login simples \nEle não faz varios cadastros \nLembre-se é apenas uma simulação ");
+
 
 
 // ESCONDER TUDO DO LOGIN
@@ -24,6 +25,9 @@ var inpSenha = document.getElementById("senha");
 var inpId = document.getElementById("id");
 var inpEmail = document.getElementById("email");
 var inpSenhaCad = document.getElementById("senhaCad");
+
+
+var carregamento = document.getElementById("aguarde");
 
 
 
@@ -99,6 +103,7 @@ btnFazCad.addEventListener('click', function(){
         email = inpEmail.value;
         senhaCad = inpSenhaCad.value;
         alert("Cadastro feito com sucesso!!");
+
         btnP.style.display = "block";
         btnP2.style.display = "block";
         btnP3.style.display = "none";
@@ -118,6 +123,9 @@ btnFazCad.addEventListener('click', function(){
         inpId.value = "";
         inpEmail.value = "";
         inpSenhaCad.value = "";
+
+        body.style.backgroundColor = "#7e8fb3";
+        div.style.backgroundImage = "url('src/img/inverno.gif')";
        
     }
 
@@ -129,21 +137,23 @@ btnFazLogin.addEventListener('click', function(){
     
 
     if(inpLogin.value === ""){
-        alert("preencha todos os campos");
+        alert("preencha o campo login");
         inpLogin.value = "";
         inpSenha.value = "";
     } else 
     if(inpSenha.value === ""){
-        alert("preencha todos os campos");
+        alert("preencha o campo senha");
         inpLogin.value = "";
         inpSenha.value = "";
-    } else
+    } else if(inpLogin.value != id || inpSenha.value != senhaCad){
+        alert("usuario ou senha invalido");
 
-    if(inpLogin.value == id && inpSenha.value == senhaCad){
-        alert("Login bem sucedido");
+    }else if(inpLogin.value == id && inpSenha.value == senhaCad){
+        alert("Seja-Bem vindo " + id+ " !");
+        window.location.href = "carregamento.html";
+        inpLogin.value = "";
+        inpSenha.value = "";
         
-
-        
-
     }
 });
+
